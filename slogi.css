@@ -1,0 +1,222 @@
+:root {
+	--bela: white;
+	--črna: black;
+	--senca: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	--senca_tekst: 4px 2px rgba(0,0,0, 0.2);
+	--tekst: open sans-serif;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.GlavniOkvir {
+	background-color: var(--bela);
+	margin: 0 auto 0;
+	display: block;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+}
+.Glava {
+	background-image: url('./grafika/Luka_Debevc_Škotska-2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 338px;
+	width: 950px;
+	border-top-left-radius:15px;
+	border-top-right-radius: 15px;
+	margin: 0 auto;
+}
+
+.Navigacija {
+	width: 950px;
+	margin: 0 auto;
+	background-color: var(--bela);
+	border-bottom: double #989898;
+	box-shadow: var(--senca);
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: var(--tekst);
+	background: #fff;
+}
+.Meni a {
+	position: relative;
+	text-decoration: none;
+	margin: 0 40px;
+	color: black;
+}
+nav a,
+nav a:after,
+nav a:before {
+  transition: all .3s;
+}
+nav a:hover {
+  color: #555;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.span {
+	color: #54D17A;
+}
+label {
+	font-size: 21px;
+	line-height: 45px;
+	display: none;
+	width: 26px;
+	margin: 0 auto;
+	color: #606060;
+}
+#toggle{
+	display: none;
+}
+
+.Vsebina {
+	margin: 0 auto;
+	padding: 30px 50px;
+	min-height: 580px;
+	width: 950px;
+	background-color: var(--bela);
+	box-shadow: var(--senca);
+	box-sizing: border-box;
+}
+#Vsebina1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.OMeni {
+	width: 530px;
+	height: 400px;
+}
+h1 {
+	font-family: var(--tekst);
+	font-size: 45px;
+	vertical-align: top;
+	display:table-cell;
+	text-shadow: var(--senca_tekst);
+}
+#Vsebina1 a,
+#Vsebina1 a:after,
+#Vsebina1 a:before {
+  transition: all .3s;
+  text-decoration: none;
+  color: var(--črna);
+}
+#Vsebina1 a:hover {
+  color: #545454;
+}
+.pozdravljeni {
+	font-family: var(--tekst);
+	font-size: 25px;
+}
+#Vsebina1 p {
+	font-size: 20px;
+	font-family: var(--tekst);
+}
+#Slika img {
+	width: 300px;
+	height: auto;
+	box-shadow:2px 2px 3px 2px rgba(51,51,51, 0.75);
+}
+
+#Vsebina2 {
+	width: 850px;
+	height: 565px;
+	overflow-y: hidden;
+	margin-top: -25px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.iframe-container{
+	position: relative;
+  	width: 100%;
+  	padding-bottom: 56.25%; 
+  	height: 0;
+  	display: block;
+    width: 850px;
+    margin: 0 auto;
+    border: 0;
+    margin-top: 27px;
+}
+.iframe-container iframe{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	display: block;
+    width: 850px;
+    height: 478.13px;
+    margin: 0 auto;
+    border: 0;
+}
+h2 {
+	font-family: var(--tekst);
+	font-size: 45px;
+	vertical-align: top;
+	display:table-cell;
+	text-shadow: var(--senca_tekst);
+}
+#Noga {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 950px;
+	height: 100px;
+	background-color: var(--bela);
+	box-shadow: var(--senca);
+	border-top: double #989898;
+	border-bottom: double #989898;
+}
+.FooterTabela img {
+	width: 40px;
+	height: 40px;
+	opacity: 0.8;
+}
+.Grid {
+	display: table;
+	margin: 0 auto;
+	table-layout: fixed;
+	padding-right: 38px;
+	margin-bottom: -10px;
+}
+ul.FooterTabela {
+	list-style: none;
+}
+ul.FooterTabela li {
+	display: inline;
+	padding: 4px;
+}
+.Izdelava {
+	margin: 0 auto;
+	font-size: 20px;
+	font-family: var(--tekst);
+}
+.Grid a {
+	transition: .3s;
+}
+.Grid a:hover {
+	opacity: 0.7;
+}
