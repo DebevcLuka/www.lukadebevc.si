@@ -262,3 +262,15 @@ h3 {
 	box-sizing: border-box;
 	box-shadow:2px 2px 3px 2px rgba(51,51,51, 0.75);
 }
+
+/*Video css*/
+#YtKanal {
+	text-align: center;
+}
+#YtKanal a:link,
+#YtKanal a:visited,
+#YtKanal a:hover,
+#Ytkanal a:active {
+	color: var(--črna);
+	text-decoration: underline;
+}
